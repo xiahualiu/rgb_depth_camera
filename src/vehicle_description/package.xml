@@ -1,0 +1,17 @@
+<package>
+  <name>vehicle_description</name>
+  <version>0.0.1</version>
+  <description>The vehicle model description package</description>
+  <maintainer email="liuxiafa@gmail.com">Xiahua Liu</maintainer>
+  <license>BSD</license>
+  <author email="liuxiafa@gmail.com">Xiahua Liu</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>joint_state_publisher_gui</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>rviz</run_depend>
+
+  <export>
+  </export>
+</package>

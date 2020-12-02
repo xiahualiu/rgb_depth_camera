@@ -1,0 +1,22 @@
+<package>
+  <name>vehicle_control</name>
+  <version>0.0.0</version>
+  <description>The vehicle_control package</description>
+
+  <maintainer email="liuxiafa@gmail.com">Xiahua Liu</maintainer>
+
+  <license>BSD</license>
+
+  <author email="liuxiafa@gmail.com">Xiahua Liu</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>controller_manager</run_depend>
+	<run_depend>joint_state_controller</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>effort_controllers</run_depend>
+
+  <export>
+  </export>
+
+</package>

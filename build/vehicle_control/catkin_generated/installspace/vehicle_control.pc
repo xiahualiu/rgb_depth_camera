@@ -1,0 +1,8 @@
+prefix=/home/xiahua/git/rgb_depth_camera/install
+
+Name: vehicle_control
+Description: Description of vehicle_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
