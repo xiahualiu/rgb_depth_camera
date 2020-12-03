@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/xiahua/git/rgb_depth_camera/build
 
 # The main recursive "all" target.
 all: gtest/all
+all: gazebo_world/all
 all: vehicle_control/all
 all: vehicle_description/all
 
@@ -61,6 +62,7 @@ all: vehicle_description/all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
+preinstall: gazebo_world/preinstall
 preinstall: vehicle_control/preinstall
 preinstall: vehicle_description/preinstall
 
@@ -73,10 +75,29 @@ clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
+clean: gazebo_world/clean
 clean: vehicle_control/clean
 clean: vehicle_description/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory gazebo_world
+
+# Recursive "all" directory target.
+gazebo_world/all:
+
+.PHONY : gazebo_world/all
+
+# Recursive "preinstall" directory target.
+gazebo_world/preinstall:
+
+.PHONY : gazebo_world/preinstall
+
+# Recursive "clean" directory target.
+gazebo_world/clean: gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+.PHONY : gazebo_world/clean
 
 #=============================================================================
 # Directory level rules for directory gtest
@@ -149,7 +170,7 @@ vehicle_control/preinstall:
 .PHONY : vehicle_control/preinstall
 
 # Recursive "clean" directory target.
-vehicle_control/clean: vehicle_control/CMakeFiles/_catkin_empty_exported_target.dir/clean
+vehicle_control/clean:
 
 .PHONY : vehicle_control/clean
 
@@ -416,31 +437,31 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
-# Target rules for target vehicle_control/CMakeFiles/_catkin_empty_exported_target.dir
+# Target rules for target gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir
 
 # All Build rule for target.
-vehicle_control/CMakeFiles/_catkin_empty_exported_target.dir/all:
-	$(MAKE) -f vehicle_control/CMakeFiles/_catkin_empty_exported_target.dir/build.make vehicle_control/CMakeFiles/_catkin_empty_exported_target.dir/depend
-	$(MAKE) -f vehicle_control/CMakeFiles/_catkin_empty_exported_target.dir/build.make vehicle_control/CMakeFiles/_catkin_empty_exported_target.dir/build
+gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/build.make gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/build.make gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xiahua/git/rgb_depth_camera/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
-.PHONY : vehicle_control/CMakeFiles/_catkin_empty_exported_target.dir/all
+.PHONY : gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/all
 
 # Build rule for subdir invocation for target.
-vehicle_control/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiahua/git/rgb_depth_camera/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 vehicle_control/CMakeFiles/_catkin_empty_exported_target.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xiahua/git/rgb_depth_camera/build/CMakeFiles 0
-.PHONY : vehicle_control/CMakeFiles/_catkin_empty_exported_target.dir/rule
+.PHONY : gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
-_catkin_empty_exported_target: vehicle_control/CMakeFiles/_catkin_empty_exported_target.dir/rule
+_catkin_empty_exported_target: gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 .PHONY : _catkin_empty_exported_target
 
 # clean rule for target.
-vehicle_control/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	$(MAKE) -f vehicle_control/CMakeFiles/_catkin_empty_exported_target.dir/build.make vehicle_control/CMakeFiles/_catkin_empty_exported_target.dir/clean
-.PHONY : vehicle_control/CMakeFiles/_catkin_empty_exported_target.dir/clean
+gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/build.make gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

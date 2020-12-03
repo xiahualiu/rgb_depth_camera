@@ -30,7 +30,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: ""
+    SyncSource: Camera
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -80,6 +80,11 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+        imu_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         wheel_lb:
           Alpha: 1
           Show Axes: false
@@ -109,7 +114,7 @@ Visualization Manager:
     - Class: rviz/Camera
       Enabled: true
       Image Rendering: background and overlay
-      Image Topic: /rrbot/camera1/image_raw
+      Image Topic: /vehicle/camera1/image_raw
       Name: Camera
       Overlay Alpha: 0.5
       Queue Size: 2
@@ -188,4 +193,4 @@ Window Geometry:
     collapsed: false
   Width: 1600
   X: 668
-  Y: 394
+  Y: 357

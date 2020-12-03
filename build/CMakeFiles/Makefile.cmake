@@ -13,9 +13,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin/catkin_generated/version/package.cmake"
   "catkin_generated/installspace/_setup_util.py"
   "catkin_generated/order_packages.cmake"
+  "gazebo_world/catkin_generated/package.cmake"
   "vehicle_control/catkin_generated/package.cmake"
   "vehicle_description/catkin_generated/package.cmake"
   "/home/xiahua/git/rgb_depth_camera/src/CMakeLists.txt"
+  "/home/xiahua/git/rgb_depth_camera/src/gazebo_world/CMakeLists.txt"
+  "/home/xiahua/git/rgb_depth_camera/src/gazebo_world/package.xml"
   "/home/xiahua/git/rgb_depth_camera/src/vehicle_control/CMakeLists.txt"
   "/home/xiahua/git/rgb_depth_camera/src/vehicle_control/package.xml"
   "/home/xiahua/git/rgb_depth_camera/src/vehicle_description/CMakeLists.txt"
@@ -162,6 +165,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "gazebo_world/CMakeFiles/CMakeDirectoryInformation.cmake"
   "vehicle_control/CMakeFiles/CMakeDirectoryInformation.cmake"
   "vehicle_description/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
@@ -177,5 +181,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "gtest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "gtest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "gtest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "vehicle_control/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake"
+  "gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake"
   )

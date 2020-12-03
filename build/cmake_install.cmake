@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/xiahua/git/rgb_depth_camera/build/gtest/cmake_install.cmake")
+  include("/home/xiahua/git/rgb_depth_camera/build/gazebo_world/cmake_install.cmake")
   include("/home/xiahua/git/rgb_depth_camera/build/vehicle_control/cmake_install.cmake")
   include("/home/xiahua/git/rgb_depth_camera/build/vehicle_description/cmake_install.cmake")
 

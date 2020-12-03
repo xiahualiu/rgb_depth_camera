@@ -383,6 +383,12 @@ _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
 
 //Value Computed by CMake
+gazebo_world_BINARY_DIR:STATIC=/home/xiahua/git/rgb_depth_camera/build/gazebo_world
+
+//Value Computed by CMake
+gazebo_world_SOURCE_DIR:STATIC=/home/xiahua/git/rgb_depth_camera/src/gazebo_world
+
+//Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/xiahua/git/rgb_depth_camera/build/gtest/googlemock
 
 //Dependencies for the target
@@ -427,6 +433,12 @@ gtest_hide_internal_symbols:BOOL=OFF
 
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
+
+//Value Computed by CMake
+rrbot_gazebo_BINARY_DIR:STATIC=/home/xiahua/git/rgb_depth_camera/build/gazebo_world
+
+//Value Computed by CMake
+rrbot_gazebo_SOURCE_DIR:STATIC=/home/xiahua/git/rgb_depth_camera/src/gazebo_world
 
 //Value Computed by CMake
 vehicle_control_BINARY_DIR:STATIC=/home/xiahua/git/rgb_depth_camera/build/vehicle_control
@@ -588,7 +600,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

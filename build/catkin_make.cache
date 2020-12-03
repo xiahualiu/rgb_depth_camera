@@ -1,2 +1,2 @@
-vehicle_control:vehicle_description
+gazebo_world:vehicle_control:vehicle_description
 -DCATKIN_DEVEL_PREFIX=/home/xiahua/git/rgb_depth_camera/devel -DCMAKE_INSTALL_PREFIX=/home/xiahua/git/rgb_depth_camera/install -G Unix Makefiles
