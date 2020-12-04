@@ -1,8 +1,8 @@
-# Install script for directory: /home/xiahua/git/rgb_depth_camera/src/gazebo_world
+# Install script for directory: /home/liuxiafa/git/rgb_depth_camera/src/gazebo_world
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/xiahua/git/rgb_depth_camera/install")
+  set(CMAKE_INSTALL_PREFIX "/home/liuxiafa/git/rgb_depth_camera/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/xiahua/git/rgb_depth_camera/build/gazebo_world/catkin_generated/installspace/gazebo_world.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/liuxiafa/git/rgb_depth_camera/build/gazebo_world/catkin_generated/installspace/gazebo_world.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world/cmake" TYPE FILE FILES
-    "/home/xiahua/git/rgb_depth_camera/build/gazebo_world/catkin_generated/installspace/gazebo_worldConfig.cmake"
-    "/home/xiahua/git/rgb_depth_camera/build/gazebo_world/catkin_generated/installspace/gazebo_worldConfig-version.cmake"
+    "/home/liuxiafa/git/rgb_depth_camera/build/gazebo_world/catkin_generated/installspace/gazebo_worldConfig.cmake"
+    "/home/liuxiafa/git/rgb_depth_camera/build/gazebo_world/catkin_generated/installspace/gazebo_worldConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world" TYPE FILE FILES "/home/xiahua/git/rgb_depth_camera/src/gazebo_world/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world" TYPE FILE FILES "/home/liuxiafa/git/rgb_depth_camera/src/gazebo_world/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world" TYPE DIRECTORY FILES "/home/xiahua/git/rgb_depth_camera/src/gazebo_world/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world" TYPE DIRECTORY FILES "/home/liuxiafa/git/rgb_depth_camera/src/gazebo_world/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world" TYPE DIRECTORY FILES "/home/xiahua/git/rgb_depth_camera/src/gazebo_world/worlds")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_world" TYPE DIRECTORY FILES "/home/liuxiafa/git/rgb_depth_camera/src/gazebo_world/worlds")
 endif()
 

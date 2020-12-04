@@ -7,9 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/xiahua/git/rgb_depth_camera/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/xiahua/git/rgb_depth_camera/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/xiahua/git/rgb_depth_camera/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD='/home/xiahua/git/rgb_depth_camera/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/xiahua/git/rgb_depth_camera/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/xiahua/git/rgb_depth_camera/src:$ROS_PACKAGE_PATH"
+export PWD='/home/liuxiafa/git/rgb_depth_camera/build'
+export ROS_PACKAGE_PATH='/home/xiahua/git/rgb_depth_camera/src:/home/liuxiafa/git/rgb_depth_camera/src:/opt/ros/noetic/share'

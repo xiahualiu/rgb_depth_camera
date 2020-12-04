@@ -1,4 +1,4 @@
-prefix=/home/xiahua/git/rgb_depth_camera/install
+prefix=/home/liuxiafa/git/rgb_depth_camera/install
 
 Name: gazebo_world
 Description: Description of gazebo_world

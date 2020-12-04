@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xiahua/git/rgb_depth_camera/src
+CMAKE_SOURCE_DIR = /home/liuxiafa/git/rgb_depth_camera/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xiahua/git/rgb_depth_camera/build
+CMAKE_BINARY_DIR = /home/liuxiafa/git/rgb_depth_camera/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/build: _catkin_empty_e
 .PHONY : gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/xiahua/git/rgb_depth_camera/build/gazebo_world && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/liuxiafa/git/rgb_depth_camera/build/gazebo_world && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/xiahua/git/rgb_depth_camera/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xiahua/git/rgb_depth_camera/src /home/xiahua/git/rgb_depth_camera/src/gazebo_world /home/xiahua/git/rgb_depth_camera/build /home/xiahua/git/rgb_depth_camera/build/gazebo_world /home/xiahua/git/rgb_depth_camera/build/gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/liuxiafa/git/rgb_depth_camera/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liuxiafa/git/rgb_depth_camera/src /home/liuxiafa/git/rgb_depth_camera/src/gazebo_world /home/liuxiafa/git/rgb_depth_camera/build /home/liuxiafa/git/rgb_depth_camera/build/gazebo_world /home/liuxiafa/git/rgb_depth_camera/build/gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gazebo_world/CMakeFiles/_catkin_empty_exported_target.dir/depend
 
