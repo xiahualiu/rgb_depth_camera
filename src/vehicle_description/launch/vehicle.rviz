@@ -9,7 +9,6 @@ Panels:
         - /RobotModel1
         - /RobotModel1/Status1
         - /Camera1
-        - /Camera1/Status1
       Splitter Ratio: 0.5
     Tree Height: 251
   - Class: rviz/Selection
@@ -124,7 +123,7 @@ Visualization Manager:
       Visibility:
         Grid: true
         RobotModel: true
-        Value: true
+        Value: false
       Zoom Factor: 1
   Enabled: true
   Global Options:
@@ -193,4 +192,4 @@ Window Geometry:
     collapsed: false
   Width: 1600
   X: 668
-  Y: 357
+  Y: 320

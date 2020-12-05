@@ -1,0 +1,5 @@
+<launch>
+  <!-- Send control signal -->
+  <node name="vehicle_control" pkg="vehicle_control" type="vehicle_control">
+  </node>
+</launch>

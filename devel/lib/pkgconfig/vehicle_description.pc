@@ -1,4 +1,4 @@
-prefix=/home/liuxiafa/git/rgb_depth_camera/devel
+prefix=/home/xiahua/git/rgb_depth_camera/devel
 
 Name: vehicle_description
 Description: Description of vehicle_description

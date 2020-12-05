@@ -1,8 +1,8 @@
-prefix=/home/liuxiafa/git/rgb_depth_camera/devel
+prefix=/home/xiahua/git/rgb_depth_camera/devel
 
 Name: vehicle_control
 Description: Description of vehicle_control
 Version: 0.0.0
 Cflags: 
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: roscpp geometry_msgs

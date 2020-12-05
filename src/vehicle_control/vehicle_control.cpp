@@ -1,6 +1,10 @@
 #include<ros/ros.h>
 #include<unistd.h>
 #include<map>
+#include<geometry_msgs/Twist.h>
+#include<termios.h>
+#include<stdio.h>
+#include<ros/console.h>
 
 std::map<char, std::vector<float>> moveBindings
 {
@@ -15,7 +19,7 @@ float turn(1.0);
 
 int getch(void)
 {
-	int ch;
+  int ch;
   struct termios oldt;
   struct termios newt;
 
@@ -43,7 +47,57 @@ int getch(void)
 
 int main(int argc, char** argv)
 {
+  char key='0';
+  int x=0;
+  int z=0;
+  int th=0;
   // Init ROS node
   ros::init(argc, argv, "vehicle_control");
   ros::NodeHandle nh;
-	ros::Publisher pub = 
+    
+  // Init cmd_vel publisher
+  ros::Publisher pub = nh.advertise<geometry_msgs::Twist>("/vehicle/cmd_vel", 1);
+  ros::Rate loop_rate(50);
+  // Create Twist message
+  geometry_msgs::Twist twist;
+  while(ros::ok)
+    {
+    // Get the pressed key
+    key = getch();
+    // If the key corresponds to a key in moveBindings
+    if (moveBindings.find(key) != moveBindings.end())
+    {
+      // Grab the direction data
+      x = moveBindings[key][0];
+      th = moveBindings[key][1];
+      fprintf(stdout,"\rCurrent: speed %f\tturn %f | Last command: %c   ", speed, turn, key);
+    }
+
+    // Otherwise, set the robot to stop
+    else
+    {
+      x = 0;
+      th = 0;
+      // If ctrl-C (^C) was pressed, terminate the program
+      if (key == '\x03')
+      {
+        break;
+      }
+    }
+
+    // Update the Twist message
+    twist.linear.x = x * speed;
+    twist.linear.y = 0;
+    twist.linear.z = 0;
+
+    twist.angular.x = 0;
+    twist.angular.y = 0;
+    twist.angular.z = th * turn;
+
+    // Publish it and resolve any remaining callbacks
+    pub.publish(twist);
+    ros::spinOnce();
+    loop_rate.sleep();
+  }
+  return 0;
+}
