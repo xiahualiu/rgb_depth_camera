@@ -1,0 +1,3 @@
+<launch>
+  <node name="depth_estimation" pkg="depth_estimation" type="depth_estimation" output="screen"/>
+</launch>

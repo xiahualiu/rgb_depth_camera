@@ -1,0 +1,8 @@
+prefix=/home/liuxiafa/git/rgb_depth_camera/devel
+
+Name: depth_estimation
+Description: Description of depth_estimation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -ldepth_estimation
+Requires: cv_bridge roscpp sensor_msgs std_msgs image_transport
